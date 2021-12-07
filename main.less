@@ -1,5 +1,8 @@
 @import "variables.less";
 
+/*header {
+    width: 100vw;
+}*/
 
 span {
     color: @red;
@@ -17,7 +20,7 @@ li {
 }
 
 .background-image {
-    width: 100vw;
+    //width: 100vw;
 }
 
 button {
@@ -25,6 +28,12 @@ button {
     font: @link-font;
     border-radius: @border-radius;
 }
+
+/*.section1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}*/
 
 .section2 {
     display: flex;
@@ -55,4 +64,11 @@ footer {
     justify-content: center;
     padding: 30px;
     background-color: @lowercase-color;
+}
+
+@media (min-width: 350px) {
+
+    header {
+        width: 100%;
+    }
 }
