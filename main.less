@@ -1,6 +1,7 @@
 @import "variables.less";
 
 /*header {
+    display: flex;
     width: 100vw;
 }*/
 
@@ -9,6 +10,8 @@ span {
 }
 
 ul {
+    display: flex;
+    width: 100%;
     background-color: @background-color;
     padding: 40px;
 }
@@ -20,7 +23,9 @@ li {
 }
 
 .background-image {
-    //width: 100vw;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 button {
@@ -29,7 +34,7 @@ button {
     border-radius: @border-radius;
 }
 
-/*.section1 {
+/*.section1 button {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -48,6 +53,11 @@ button {
     background-color: @light-gray;
 }
 
+.section5 {
+    display: flex;
+    justify-content: center;
+}
+
 .part1, .part4 {
     width: 67%;
     padding: 20px;
@@ -64,11 +74,4 @@ footer {
     justify-content: center;
     padding: 30px;
     background-color: @lowercase-color;
-}
-
-@media (min-width: 350px) {
-
-    header {
-        width: 100%;
-    }
 }
